@@ -1,1 +1,5 @@
-
+duration_in_second = int(input("Enter the duration in seconds:  \n"))
+Hour = str(duration_in_second // 3600)
+Minutes =str( (duration_in_second % 3600) // 60)
+Seconds = str (duration_in_second % 60 )
+print("The duration is: \n" + Hour +"h " + Minutes + "min " + Seconds + "s")
