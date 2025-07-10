@@ -1,36 +1,11 @@
-"""
-F-Strings:
-'F-strings' are a new and easy way to put variables inside a string. 
-To use them, just write the letter f before your string, 
-and put the variable inside curly brackets {}.
-"""
-
+# 1
 # Exemple:
 age = 23
 print(f"My name is Ouiam, I am {age} years old.")
 print("------------------------------------------------\n")
 
 
-"""
-If Condition:
-**************
-We use this code block:
-
-if condition:
-    If the condition is true, the code will run.
-elif condition:
-    It check another condition if the first is not true.
-else:
-    It runs when none of the above conditions are true.
-"""
-
-"""
-Indentation:
-************
-Python uses indentation to define blocks of code (it is best to leave 4 spaces). If you don't indent
-correctly, Python will give you an error.
-"""
-
+# 2
 # Needed Output:
 # Welcome to my Application:
 # How old are you? 
@@ -46,9 +21,8 @@ else:
 print("------------------------------------------------\n")
 
 
-
-# Needed Output:
-# if this number is positive or negative or zero
+# 3
+# White a simple project, that take a number, and print if this number is positive or negative or zero.
 
 number = float(input("Enter a number:  "))
 if number > 0:
@@ -57,4 +31,50 @@ elif number == 0:
     print(f"0 is null")
 else:
     print(f"{number} is negative")
+print("------------------------------------------------\n")
+
+
+# 4
+# Write a simple project, to check if a PassWord is correct or not.
+
+PassWord = "abc123"
+your_PassWord = input("Enter your PassWord:  ")
+if your_PassWord == PassWord:
+    print("Hello")
+else:
+    print("Sorry")
+print("------------------------------------------------\n")
+    
+
+# 5
+""" 
+Write a block of code to ask about age and driver's license, if over than 18 years old or 
+equal and have a driving license, he can to drive
+"""
+
+age = int(input("How old are you:  \n"))
+license = input("Do you have a driver's lisence: (yes or no)").lower()
+if age >= 18 and license == "yes":
+    print("You can to drive")
+elif age < 18 and license == "no":
+    print("Sorry, you can't to drive")
+else:
+    print(f"Sorry, you entery of '{license}' is not understood")
+print("------------------------------------------------\n")
+
+
+# 6
+# A project about 'Nested if statements':
+
+is_morocco = input("Are you Moroccan? (yes or no): \n").upper()
+if is_morocco == "YES":
+    print("Good, that is the first step...")
+    age = int(input("Please enter your age:  \n"))
+    if age >= 18:
+        print("You can have an ID")
+    else:
+        print("Sorry, you have to be 18 or older    \nPlease try again when you are 18")
+else:
+    print("Sorry, an Morocco ID is give only to Moroccans")
+
 print("------------------------------------------------\n")

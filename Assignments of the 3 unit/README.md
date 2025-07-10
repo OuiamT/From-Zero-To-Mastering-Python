@@ -1,7 +1,7 @@
 # 🧠 Learning 'if', 'elif' and 'else' in Python:
 This folder contains notes and practice for understanding conditional statements in Python.
 
-# ✔ What i learned:
+## ✔ What i learned:
 - **F-Strings**:
 'F-strings' are easy way to put variables inside a string. To use them, just write the letter 'f' before your string, and put
 the variable inside curly brackets {}.
