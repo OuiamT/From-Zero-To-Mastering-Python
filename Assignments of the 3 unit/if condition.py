@@ -64,7 +64,7 @@ print("------------------------------------------------\n")
 
 
 # 6
-# A project about 'Nested if statements':
+# A project about Nested if statements:
 
 is_morocco = input("Are you Moroccan? (yes or no): \n").upper()
 if is_morocco == "YES":
