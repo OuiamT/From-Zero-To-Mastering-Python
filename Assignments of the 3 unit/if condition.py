@@ -1,6 +1,6 @@
 # 1
 # Exemple:
-age = 23
+age = 23 
 print(f"My name is Ouiam, I am {age} years old.")
 print("------------------------------------------------\n")
 
@@ -53,13 +53,17 @@ equal and have a driving license, he can to drive
 """
 
 age = int(input("How old are you:  \n"))
-license = input("Do you have a driver's lisence: (yes or no)").lower()
-if age >= 18 and license == "yes":
-    print("You can to drive")
-elif age < 18 and license == "no":
-    print("Sorry, you can't to drive")
-else:
-    print(f"Sorry, you entery of '{license}' is not understood")
+license = input("Do you have a driver's lisence: (yes or no):  ").lower()
+
+if license == "yes" or license == "no":
+    if age >= 18 and license == "yes":
+        print("You can to drive")
+    # elif age < 18 or license == "no":
+    else:
+        print("Sorry, you can't to drive")
+else :
+    print(f"Sorry, you entery of '{license}' is not understood")  
+
 print("------------------------------------------------\n")
 
 
