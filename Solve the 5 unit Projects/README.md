@@ -13,6 +13,6 @@ A collection of two beginner Python projects.
 
 ### ▶️ How to Use:
 1. The user is prompted to play or see the rules.
-2. The user enters their choice (rock, paper, or scissors).
+2. The user enters their choice **(rock, paper, or scissors)**.
 3. The computer randomly picks a choice.
-4. Your win or loss is determined based on the rules of the game.
+4. Your **win** or **loss** is determined based on the rules of the game.
