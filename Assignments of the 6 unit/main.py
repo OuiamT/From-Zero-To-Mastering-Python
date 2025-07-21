@@ -1,6 +1,3 @@
-# for loop--> string list range
-
-
 # 1
 # Needed Output:
 # Red
