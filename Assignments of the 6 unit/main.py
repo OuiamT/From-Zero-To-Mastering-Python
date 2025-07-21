@@ -60,3 +60,56 @@ for number in numbers:
         print()
 print("Finished the loop successfully.")
 print("-" * 20)
+
+
+# 5
+# Needed Output
+# Enter the name of attendees separated by comma and espace:
+# name
+# Is this person attending? (yes or no)
+# if yes: Attendance confirmed! 
+# if no: Attendance not confirmed!
+
+attendees = input("Enter the name of attendees separated by comma and espace:  ").split(", ")
+for person in attendees:
+    print(person)
+    print()
+    confirme = input("Is this person attending? (yes or no):  ").lower()
+    if confirme == "yes" :
+        print("Attendance confirmed!")
+    else:
+        print("Attendance not confirmed!")
+    print("---------")
+print("-" * 20)
+
+
+# 6
+# Needed Output
+
+done_tasks = []
+ongoing_tasks = []
+
+
+tasks = input("Enter your taskes for today separated by comma and espace:  ").split(", ")
+for task in tasks:
+    print(f"\n{task}\n")
+    respons = input(f"Did you finish {task} alredy? (Yes/No):  ").upper()
+    if respons == "YES":
+        print("Nice job")
+        done_tasks.append(task)
+    else:
+        print("Try not to put it off!")
+        ongoing_tasks.append(task)
+    print("------")
+response = input("Do you want to see your today's progress? (Yes/No):  ").upper()
+if respons == "YES":
+    print(f"""
+          
+    ***** Done Tasks *****
+{done_tasks}
+
+    ***** Ongoing Tasks *****
+{ongoing_tasks}
+""")
+else :
+    input("Enter Press to exist....")
