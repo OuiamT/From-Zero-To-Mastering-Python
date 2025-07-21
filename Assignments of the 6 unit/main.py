@@ -1,4 +1,5 @@
-# for loop
+# for loop--> string list range
+
 
 # 1
 # Needed Output:
@@ -92,8 +93,8 @@ print("-" * 20)
 # if no: Try not to put it off!
 # After finish all tasks
 # Do you want to see your today's progress? (Yes/No):
-# if yes: ***** Done Tasks *****: <tasks>
-# if no: ***** Ongoing Tasks *****: <tasks>
+# if yes: ***** Done Tasks *****: <tasks>     ***** Ongoing Tasks *****: <tasks>
+# if no: Enter Press to exist....
 
 done_tasks = []
 ongoing_tasks = []
@@ -111,7 +112,9 @@ for task in tasks:
         ongoing_tasks.append(task)
     print("------")
 response = input("Do you want to see your today's progress? (Yes/No):  ").upper()
-if respons == "YES":
+if respons == "NO":
+    input("Enter Press to exist....")
+else:
     print(f"""
           
     ***** Done Tasks *****
@@ -120,5 +123,34 @@ if respons == "YES":
     ***** Ongoing Tasks *****
 {ongoing_tasks}
 """)
-else :
-    input("Enter Press to exist....")
+print("-" * 20)
+
+
+# 7
+# Needed Output
+# 0
+# 1
+# 2
+# 3
+# 4
+for x in range(5):
+    print(x)
+print("-" * 20)
+
+
+# 8
+# Needed Output
+# 5
+# 7
+# 9
+for x in range(5, 10, 2):
+    print(x)
+print("-" * 20)
+
+# 9
+print("*** Welcome to the Multipliation table ***")
+number = int(input("Enter a number: "))
+for X in range(1, 11):
+    result = X * number
+    print(f"{number} x {X} = {result}")
+print("-" * 20)
