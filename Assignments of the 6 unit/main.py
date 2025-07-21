@@ -85,6 +85,15 @@ print("-" * 20)
 
 # 6
 # Needed Output
+# Enter your taskes for today separated by comma and espace:
+# A task
+# Did you finish <task> alredy? (Yes/No):
+# if yes: Nice job
+# if no: Try not to put it off!
+# After finish all tasks
+# Do you want to see your today's progress? (Yes/No):
+# if yes: ***** Done Tasks *****: <tasks>
+# if no: ***** Ongoing Tasks *****: <tasks>
 
 done_tasks = []
 ongoing_tasks = []
