@@ -109,9 +109,7 @@ for task in tasks:
         ongoing_tasks.append(task)
     print("------")
 response = input("Do you want to see your today's progress? (Yes/No):  ").upper()
-if respons == "NO":
-    input("Enter Press to exist....")
-else:
+if respons == "YES":
     print(f"""
           
     ***** Done Tasks *****
@@ -120,6 +118,8 @@ else:
     ***** Ongoing Tasks *****
 {ongoing_tasks}
 """)
+else:
+    input("Enter Press to exist....")
 print("-" * 20)
 
 
@@ -150,4 +150,35 @@ number = int(input("Enter a number: "))
 for X in range(1, 11):
     result = X * number
     print(f"{number} x {X} = {result}")
+print("-" * 20)
+
+
+# 10
+"""Shorthand Operations"""
+# Example:
+x = 5
+x = x + 2
+print(x)
+# Is same
+x = 5
+x += 2
+print(x)
+
+# Example for the String
+message = "Hello"
+message += " ,World!"
+print(message)
+
+# 11
+# Needed Output
+# Let's add each number to the next
+# --> <total>
+# The total number is: <total>
+
+total = 0
+print("Let's add each number to the next:")
+for number in range(1, 4):
+    total += number
+    print(f"--> {total}")
+    print(f"The total number is: {total}\n")
 print("-" * 20)
