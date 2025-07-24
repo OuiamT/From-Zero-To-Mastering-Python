@@ -17,7 +17,7 @@ This folder includes notes and exercises to help learn and practice fundamental 
     import random
     fruits = ["Apple", "Banana", "Cherry"]
     print(random.choices(fruits, k=2))  
-    #Output: ["Cherry", "Cherry"]
+    # Output: ["Cherry", "Cherry"]
     ```
     
 + How to use **Nested List**: A list inside another list.
