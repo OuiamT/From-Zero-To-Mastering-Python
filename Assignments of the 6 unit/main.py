@@ -177,8 +177,80 @@ print(message)
 
 total = 0
 print("Let's add each number to the next:")
-for number in range(1, 4):
+for number in range(1, 5):
     total += number
     print(f"--> {total}")
     print(f"The total number is: {total}\n")
 print("-" * 20)
+
+# 12
+# Input:
+# meryam sabah, ali farah, salma salah 
+# Needed Output
+# Enter the first and the last name of your friends separated by a comma and espace:
+# ["meryam", "sabah"]
+# ["ali", "farah"]
+# ["salma", "salah"]
+# Abbreviated names:
+# M. S.
+# A. F.
+# S. S.
+
+names = input(
+        "Enter the first and the last name of your friends separated by a comma and espace:  "
+        ).title().split(", ")
+for f_l_name in names:
+    separator = f_l_name.split()
+    print(separator)
+    
+print("Abbreviated names:")
+for abbrv in names:
+    separator = abbrv.split()
+    f_name = separator[0][0]
+    l_name = separator[1][0]
+    print(f"{f_name}. {l_name}.")
+
+
+# 13
+# Input: Python is easy
+# Needed Output
+# Enter a sentance:
+# Reversed sentance: easy is Python
+
+reversed_sentance = []
+sentance = input("Enter a sentance:  ").split()
+lenght = len(sentance)
+
+for word in range(1, lenght + 1):
+    l_word = sentance[-word]
+    reversed_sentance.append(l_word)
+
+# ! Or can you writ it with use slicing:
+# for word in sentance[::-1]:
+#     reversed_sentance.append(word)    
+
+right_sentance = " ".join(reversed_sentance)
+print(f"Reversed sentance: {right_sentance}")
+
+
+# 14
+# Input: "Wait up!" Shouted> the main in= (green) clothes!
+# Needed Output
+# Please type a sentance:
+# 
+# ----- Here is the same sentance without punctuation -----
+# Wait up Shouted the main in green clothes
+
+import string
+
+same_sentance = []
+sentance = input("Please type a sentance: \n")
+punctuations = string.punctuation
+
+for world in sentance:
+    if world not in punctuations:
+        same_sentance.append(world)
+
+print("\n----- Here is the same sentance without punctuation -----\n")
+right_sentance = "".join(same_sentance)
+print(right_sentance)
