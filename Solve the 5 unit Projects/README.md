@@ -1,4 +1,4 @@
-# 🐇 Rabbit Placement Game & ✊🖐✌ Rock Paper Scissors:
+# Rabbit Placement Game & Rock Paper Scissors:
 A collection of two beginner Python projects.
 
 ## 🐇 Project 1: Rabbit Placement Game:
