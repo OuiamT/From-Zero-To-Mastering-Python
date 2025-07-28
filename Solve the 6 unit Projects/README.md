@@ -1,14 +1,14 @@
 # iShop Calculator & Password Generator:
 A collection of two beginner Python projects.
 
-## 🛒Project 1: iShop Calculator:
+## 🛒 Project 1: iShop Calculator:
 ### ▶️ How to Use:
 - Input the number of items in your basket.
 - Enter names and prices for each item.
 - View the full list of basket items.
 - See the total cost of your shopping.
 
-## 🔐 Password Generator:
+## 🔐 Project 2: Password Generator:
 ### ▶️ How to Use:
 The script asks you:
 - Total number of characters in the password.
