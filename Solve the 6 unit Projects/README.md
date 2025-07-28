@@ -16,8 +16,8 @@ The script asks you:
     + Number of digits
     + Number of symbols
 - It checks that the sum of letters, digits, and symbols matches the total number or not.
-- If valid, it creates a password using import string:
-    + string.ascii_letters (A-Z, a-z)
-    + string.digits (0-9)
-    + string.punctuation (!@#$%^&*...)
-- The password is shuffled to improve randomness and printed to the screen.
+- If valid, it creates a password using `import string`:
+    + **string.ascii_letters** (A-Z, a-z)
+    + **string.digits** (0-9)
+    + **string.punctuation** (!@#$%^&*...)
+- The password is shuffled to improve randomness and printed to the screen using `random.shuffle()`.
