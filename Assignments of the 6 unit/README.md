@@ -1,7 +1,7 @@
 # 🧠 Learning some Fundamental Python:
 This Python script demonstrates core programming concepts using for loops, string & integer operations, and basic logic. Below are the main topics covered.
 
-# ✔ What I learned:
+## ✔ What I learned:
 + For Loop with a **List**: A for loop allows iteration over a list to print items.
 + For Loop with a **String**: Strings are iterable in Python. You can loop through each character. Converting and processing one letter at a time.
 + For Loop with **range(start, end, step)**:
@@ -11,3 +11,7 @@ This Python script demonstrates core programming concepts using for loops, strin
 + Shorthand Operations with **String** and **Integer**.
 + Slicing.
 + **join()** Method: Converting list of words into a readable sentence or structured string output.
+
+## 📌 Bonus Knowledge:
+### 🐍 Code Style – Snake Case:
+In `snake_case` all letters are lowercase and spaces between words are replaced with underscores (**_**), used in **variables**, **functions**, **file name** ..... 
