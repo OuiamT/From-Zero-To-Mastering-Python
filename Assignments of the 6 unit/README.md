@@ -10,7 +10,8 @@ This Python script demonstrates core programming concepts using for loops, strin
   - `step`: how much to increase each time
 + Shorthand Operations with **String** and **Integer**.
 + Slicing.
-+ **join()** Method: Converting list of words into a readable sentence or structured string output.
++ **shuffle()**: is a method from Python’s random module that randomly reorders the items in a list. 
++ **join()**: Converting list of words into a readable sentence or structured string output.
 
 ## 📌 Bonus Knowledge:
 ### 🐍 Code Style – Snake Case:
