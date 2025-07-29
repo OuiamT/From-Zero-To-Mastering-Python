@@ -21,9 +21,9 @@ In `snake_case` all letters are lowercase and spaces between words are replaced 
 | **Escape** | **Meaning**| **Example**| **Output** |
 |--------|----------------------------|----------------------------------|--------------------|
 | `\n`   | New line                   | `print("Hello \nWorld")`          | Hello <br>World   |
-| `\t`   | Tab (horizontal space)     | `print("Hello\tWorld")`          | Hello  World       |
+| `\t`   | Tab     | `print("Hello\tWorld")`          | Hello  World       |
 | `\\`   | Backslash (`\`)            | `print("C:\\Users\\Name")`       | C:\Users\Name      |
 | `\'` or `\"`| Single quote (`'`) or Double quote (`"`) | `print("He said \"Hi\"")` | He said "Hi" |
-| `\r`   | Carriage return            | `print("Hello ther!\rWorld")`          | World ther! |
+| `\r`   | Carriage return            | `print("Hello there!\rWorld")`          | World there! |
 | `\b`   | Backspace                  | `print("Helloo\b")`              | Hello  |
 
