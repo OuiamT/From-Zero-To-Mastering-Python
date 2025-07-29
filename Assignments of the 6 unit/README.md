@@ -18,6 +18,8 @@ This Python script demonstrates core programming concepts using for loops, strin
 In `snake_case` all letters are lowercase and spaces between words are replaced with underscores (**_**), used in **variables**, **functions**, **file name** ..... 
 
 ### 🧾 Escape Character:
+**Escape characters** let you add special effects in text, like a new line or a tab.
+
 | **Escape** | **Meaning**| **Example**| **Output** |
 |--------|----------------------------|----------------------------------|--------------------|
 | `\n`   | New line                   | `print("Hello \nWorld")`          | Hello <br>World   |
