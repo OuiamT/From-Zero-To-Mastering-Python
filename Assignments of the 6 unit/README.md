@@ -18,10 +18,12 @@ This Python script demonstrates core programming concepts using for loops, strin
 In `snake_case` all letters are lowercase and spaces between words are replaced with underscores (**_**), used in **variables**, **functions**, **file name** ..... 
 
 ### 🧾 Escape Character:
-| **Escape**   |  **Meaning**     |    **Input**   |   **Output**  |
-|-------|--------|--------|--------|
-|  `\n`  | New line | `print("Hello \nWorld!`  |    Hello   |
-                                               |     World   |
-|   `\t`  | Tab  | `print("Hello\tWorld")`   |  Hello  World|
-|   `\\`   | Backslash | `print("C:\\Users\\Name")`  | C:\User\Name  |
-|   `\'` or ``\"`  | Single quote (') or Double quote (") | `print("He said \"Hi\"")`  | He said "Hi"  |
+| **Escape** | **Meaning**| **Example**| **Output** |
+|--------|----------------------------|----------------------------------|--------------------|
+| `\n`   | New line                   | `print("Hello \nWorld")`          | Hello <br>World   |
+| `\t`   | Tab (horizontal space)     | `print("Hello\tWorld")`          | Hello  World       |
+| `\\`   | Backslash (`\`)            | `print("C:\\Users\\Name")`       | C:\Users\Name      |
+| `\'` or `\"`| Single quote (`'`) or Double quote (`"`) | `print("He said \"Hi\"")` | He said "Hi" |
+| `\r`   | Carriage return            | `print("Hello ther!\rWorld")`          | World ther! |
+| `\b`   | Backspace                  | `print("Helloo\b")`              | Hello  |
+
