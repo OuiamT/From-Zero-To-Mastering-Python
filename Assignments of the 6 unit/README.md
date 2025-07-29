@@ -20,7 +20,7 @@ In `snake_case` all letters are lowercase and spaces between words are replaced 
 ### 🧾 Escape Character:
 | **Escape**   |  **Meaning**     |    **Input**   |   **Output**  |
 |-------|--------|--------|--------|
-|  `\n`  | New line | `print("Hello \nWorld!`  \    Hello   |
+|  `\n`  | New line | `print("Hello \nWorld!`  |    Hello   |
                                                     World   |
 |   `\t`  | Tab  | `print("Hello\tWorld")`   |  Hello  World|
 |   `\\`   | Backslash | `print("C:\\Users\\Name")`  | C:\User\Name  |
