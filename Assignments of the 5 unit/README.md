@@ -1,4 +1,4 @@
-# 🧠 Learning some Fundamental Python.:
+# 🧠 Learning some Fundamental Python:
 This folder includes notes and exercises to help learn and practice fundamental Python.
 
 ## ✔ What I learned:
