@@ -11,7 +11,9 @@ A **function** is a reusable block of code designed to perform a specific task. 
 ```
 def function_name():
      Code block
-# After defining a function, you **call** it
+
+
+# After defining a function, you call it
 function_name()
 ```
 
