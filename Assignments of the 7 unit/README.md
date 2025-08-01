@@ -9,7 +9,7 @@ A **function** is a reusable block of code designed to perform a specific task. 
 
 ## 🔧 Function Structure:
 ```
-function functionName():
+def functionName():
      Code block
 ```
 After defining a function, you **call** it:
