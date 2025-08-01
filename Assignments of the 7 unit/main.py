@@ -27,3 +27,61 @@ input("Press \"Enter\" to exit ...")
 bye()
 print("-" * 20)
 print()
+
+
+"""
+*** Reeborg's keeyboard ***
+move() --> has moved forward
+turn_left() --> turn left
+"""
+
+# 3
+# Needed Output:
+
+"""
+We want him to take two steps forward and come back:
+
+
+move()
+move()
+turn_left()
+turn_left()
+move()
+move()
+"""
+
+# 4
+# Needed Output
+
+"""
+We want to give us his face (turn right):
+
+
+turn_left()
+turn_left()
+turn_left()
+"""
+
+# 5
+"""
+We want to draw a square:
+
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+turn_left()
+move()
+move()
+turn_right()
+move()
+move()
+turn_right()
+move()
+move()
+turn_right()
+move()
+move()
+turn_left()
+"""
