@@ -1,6 +1,3 @@
-# why used _ in for loop
-# difference between for and while 
-
 # 1
 # Needed Output:
 # Hello and Welcome to my function!
@@ -34,8 +31,11 @@ print()
 
 """
 *** Reeborg's keeyboard ***
+
 move() --> has moved forward
 turn_left() --> turn left
+at_goal() --> reached the goal
+front_is_clear() --> you have no barrier in front of you
 """
 
 # 3
@@ -137,14 +137,37 @@ print("Correct password")
 # It will not stop until you enter the correct number.
 
 import random
-computer_choice = random.randint(1, 10)
-choice = int(input("Guess a number between 1 and 10:  "))
-if choice > 10 or choice < 1:
+computer_guess = random.randint(1, 10)
+guess = int(input("Guess a number between 1 and 10:  "))
+if guess > 10 or guess < 1:
     print("Try again and choice a number between 1 and 10")
 else:
-    while computer_choice != choice:
-        if choice < computer_choice:
-            choice = int(input("Too low! Guess again:  "))
+    while computer_guess != guess:
+        if guess < computer_guess:
+            guess = int(input("Too low! Guess again:  "))
         else:
-            choice = int(input("Too high! Guess again:  "))
+            guess = int(input("Too high! Guess again:  "))
     print("Congratulation! You guess the number!")
+
+# 9
+# Needed Output
+"""
+Solution of Hurdle2:
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    move()
+    
+def jump():
+    move()
+    turn_left()
+    move()
+    turn_right()
+    turn_right()
+    turn_left()
+
+while not at_goal():
+    jump()
+"""
