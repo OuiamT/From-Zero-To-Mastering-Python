@@ -1,6 +1,10 @@
 # 🧠 Learning Functions:
 A **function** is a reusable block of code designed to perform a specific task. Instead of writing the same code multiple times, you can define a function once and call it whenever needed. And we will use this websit **[Reeborg's World](https://reeborg.ca/index_en.html)** to practice logical thinking.
 
+## ✔ What I learned:
+- **While Loop**: The **while loop** in Python is used to repeatedly execute a block of code as long as a condition is **True**. It is ideal when you don’t know in advance how many times the loop should run.
+- **Functions**
+
 ## ✅ Why Use Functions?
 - **Reusability**: Write once, use many times.
 - **Modularity**: Break complex problems into smaller, manageable parts.
