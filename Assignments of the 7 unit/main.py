@@ -1,3 +1,6 @@
+# why used _ in for loop
+# difference between for and while 
+
 # 1
 # Needed Output:
 # Hello and Welcome to my function!
@@ -112,3 +115,36 @@ def jump():
 for _ in range(6):
     jump()
 """
+
+# 7
+# Needed Output
+# example correct password = 1a2b3c
+# Enter your password:
+# The code entry password will be repeated until it is correct.
+
+correct_password = "1a2b3c"
+entered_password = input("Enter your password:\t")
+while entered_password != correct_password:
+    print("Invalide password. Try again...")
+    entered_password = input("Enter your password again:\t")
+
+print("Correct password")
+
+
+# 8
+# Needed Output
+# Guess a number between 1 and 10:  
+# It will not stop until you enter the correct number.
+
+import random
+computer_choice = random.randint(1, 10)
+choice = int(input("Guess a number between 1 and 10:  "))
+if choice > 10 or choice < 1:
+    print("Try again and choice a number between 1 and 10")
+else:
+    while computer_choice != choice:
+        if choice < computer_choice:
+            choice = int(input("Too low! Guess again:  "))
+        else:
+            choice = int(input("Too high! Guess again:  "))
+    print("Congratulation! You guess the number!")
