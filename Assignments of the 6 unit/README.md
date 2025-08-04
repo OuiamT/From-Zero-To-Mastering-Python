@@ -1,13 +1,14 @@
 # 🧠 Learning some Fundamental Python:
-This Python script demonstrates core programming concepts using for loops, string & integer operations, and basic logic. Below are the main topics covered.
+This Python script demonstrates core programming concepts using **for loops**, string & integer operations, and basic logic. Below are the main topics covered.
 
 ## ✔ What I learned:
-+ For Loop with a **List**: A for loop allows iteration over a list to print items.
-+ For Loop with a **String**: Strings are iterable in Python. You can loop through each character. Converting and processing one letter at a time.
-+ For Loop with **range(start, end, step)**:
++ **For Loop** with a **List**: A for loop allows iteration over a list to print items.
++ **For Loop** with a **String**: Strings are iterable in Python. You can loop through each character. Converting and processing one letter at a time.
++ **For Loop** with **range(start, end, step)**:
   - `start`: beginning of the range (inclusive)
   - `end`: end of the range (exclusive)
   - `step`: how much to increase each time
++ We used **Underscore: "_"** in **for loop** when we don't have any variables to used it. 
 + Shorthand Operations with **String** and **Integer**.
 + Slicing.
 + **shuffle()**: is a method from Python’s random module that randomly reorders the items in a list. 
