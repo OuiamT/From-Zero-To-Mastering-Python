@@ -170,4 +170,60 @@ def jump():
 
 while not at_goal():
     jump()
+    
+"""
+
+
+# 10
+# Needed Output
+"""
+Solution of Hurdle 3:
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    move()
+    
+def jump():
+    turn_left()
+    move()
+    turn_right()
+    turn_right()
+    turn_left()
+    
+while not at_goal():
+    if not front_is_clear():
+        jump()
+    else:
+        move()
+"""
+
+
+# 11
+# Needed Output
+"""
+Solution of Hurdle 4:
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    move()
+        
+def jump():
+    turn_left()
+    while wall_on_right():
+        move()
+    turn_right()
+    turn_right()
+    while front_is_clear():
+        move()
+    turn_left()
+    
+while not at_goal():
+    if not front_is_clear():
+        jump()
+    else:
+        move()
 """
