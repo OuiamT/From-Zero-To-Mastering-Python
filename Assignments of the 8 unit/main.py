@@ -20,3 +20,34 @@ for character in random_fruit:
         print("Right")
     else:
         print("Wrong")
+
+
+# 2
+# Needed Output
+
+# We have 'apple' like a random fruit 
+# ['_', '_', '_', '_', '_']
+# Please guess a letter:  e
+# ['_', '_', '_', '_', 'e']
+
+import random
+
+hight_fruit = []
+
+fruits = ("apple", "banana", "pear", "tangerine", "plum", "grapce", "watermelon")
+random_fruit = random.choice(fruits)
+print()
+
+for _ in random_fruit:
+    hight_fruit.append("_")  #Or hight_fruit += "_"
+print(hight_fruit)
+choice_a_char = input("Please guess a letter:  ").lower()
+
+if choice_a_char in random_fruit:
+    for index in range(len(random_fruit)):
+        if choice_a_char == random_fruit[index]:
+            hight_fruit[index] = choice_a_char
+    print(hight_fruit)
+    
+else:
+    print("Try again ...")
