@@ -129,7 +129,8 @@ while entered_password != correct_password:
     entered_password = input("Enter your password again:\t")
 
 print("Correct password")
-
+print("-" * 20)
+print()
 
 # 8
 # Needed Output
@@ -139,15 +140,18 @@ print("Correct password")
 import random
 computer_guess = random.randint(1, 10)
 guess = int(input("Guess a number between 1 and 10:  "))
-if guess > 10 or guess < 1:
+while guess > 10 or guess < 1:
     print("Try again and choice a number between 1 and 10")
-else:
-    while computer_guess != guess:
-        if guess < computer_guess:
-            guess = int(input("Too low! Guess again:  "))
-        else:
-            guess = int(input("Too high! Guess again:  "))
-    print("Congratulation! You guess the number!")
+    guess = int(input("Guess a number between 1 and 10:  "))
+
+while computer_guess != guess:
+    if guess < computer_guess:
+        guess = int(input("Too low! Guess again:  "))
+    else:
+        guess = int(input("Too high! Guess again:  "))
+print("Congratulation! You guess the number!")
+print("-" * 20)
+print()
 
 # 9
 # Needed Output

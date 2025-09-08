@@ -48,7 +48,7 @@ print("------------------------------------------------\n")
 
 # 5
 """ 
-Write a block of code to ask about age and driver's license, if over than 18 years old or 
+Write a block code to ask about age and driver's license, if over than 18 years old or 
 equal and have a driving license, he can to drive
 """
 
