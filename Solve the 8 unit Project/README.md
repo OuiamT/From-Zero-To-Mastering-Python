@@ -12,3 +12,14 @@ art of a hangman.
 - If you repeat a letter, the game will remind you: "You already guessed that. Try again"
 - If you guess all letters before lives run out, **you WIN**.
 - If you run out of lives, you see the full hangman drawing and, **you LOSE**.
+
+## 📌 Bonus Knowledge:
+### Python Enhancement Proposal:
+
+**PEP (Python Enhancement Proposal)** is a design document that provides information to the Python community. 
+It describes new features, improvements, or guidelines for the Python language.
+In this project uses three tools to keep the code clean and readable:
+- **Black** → Automatically formats your code to follow **PEP 8** conventions.
+- **pydocstyle** → Ensures your documentation follows **PEP 257** conventions.
+- **pylint** → Analyzes your code for errors, coding standards, and potential bugs.
+- And we have **pycodestyle** → Ensures your code follows **PEP 8** conventions.
