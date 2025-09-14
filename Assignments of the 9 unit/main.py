@@ -3,6 +3,7 @@
 #   print(parameter)
 
 # fct(argument)
+# positional arguments
 
 # 1
 
@@ -22,8 +23,21 @@
 # 7 x 10 = 70
 
 def multiplay(number):
-    for x in range(1, 11):
-        result = number * x
-        print(f"{number} x {x} = {result}")
+    for a in range(1, 11):
+        print(f"{number} x {a} = {number * a}")
 
 multiplay(7)
+
+# 2
+# Needed Output:
+# Hi, your name is: Mohamed")
+# print(f"Your age is: 22 years old")
+# print(f"You live in: Morocco
+
+
+def welcome(name, age, natinality):
+    print(f"Hi, your name is: {name}")
+    print(f"Your age is: {age} years old")
+    print(f"You live in: {natinality}")
+
+welcome(age=22, natinality="Morocco", name="Mohamed")
