@@ -66,8 +66,8 @@ import string
 new_sentance = []
 alphabet = string.ascii_letters
 
-sentance = input("Enter a sentance: ").strip()
-for character in sentance:
+word = input("Enter a sentance: ").strip()
+for character in word:
     old_index = alphabet.index(character)
     new_index = old_index + 2
     new_sentance.append(alphabet[new_index])
