@@ -4,6 +4,8 @@
 
 # fct(argument)
 # positional arguments
+# ??!! the difference between methode and function
+# the methode index() (the difference between this and find())
 
 # 1
 
@@ -27,6 +29,8 @@ def multiplay(number):
         print(f"{number} x {a} = {number * a}")
 
 multiplay(7)
+print("-" * 20)
+print()
 
 # 2
 # Needed Output:
@@ -41,3 +45,33 @@ def welcome(name, age, natinality):
     print(f"You live in: {natinality}")
 
 welcome(age=22, natinality="Morocco", name="Mohamed")
+print("-" * 20)
+print()
+
+
+# 3
+
+# Input
+# "Hello"
+
+# Needed Output:
+# "Jgnnq" 
+# example: H --> I --> J
+#          e --> f --> g
+#          l --> m --> n
+
+
+import string
+
+new_sentance = []
+alphabet = string.ascii_letters
+
+sentance = input("Enter a sentance: ").strip()
+for character in sentance:
+    old_index = alphabet.index(character)
+    new_index = old_index + 2
+    new_sentance.append(alphabet[new_index])
+
+print("".join(new_sentance))
+print("-" * 20)
+print()
