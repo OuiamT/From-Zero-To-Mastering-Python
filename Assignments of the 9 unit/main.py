@@ -75,3 +75,59 @@ for character in word:
 print("".join(new_sentance))
 print("-" * 20)
 print()
+
+
+# 4
+# Input:
+# 'zoo'
+
+# Needed Output:
+# 'bqq'
+# Solving the 'index out of range' problem for the last alphabets.
+
+
+import string
+
+new_sentance = []
+alphabet = string.ascii_lowercase
+
+word = input("Enter a sentance: ").strip().lower()
+for character in word:
+    old_index = alphabet.index(character)
+    new_index = (old_index + 2) % 26
+    new_sentance.append(alphabet[new_index])
+
+print("".join(new_sentance))
+print("-" * 20)
+print()
+
+
+# 5
+# Input:
+# 'the king is sleeping!!?
+
+# Needed Output:
+# ''
+
+import string
+
+encrypted_sentance = ""
+
+alphabet = string.ascii_lowercase
+punctuation = string.punctuation
+sentance = input("Enter your sentance:\n").strip().lower()
+number = int(input("Enter the number for encrpting:\t"))
+
+for character in sentance:
+    if character == " ":
+        encrypted_sentance += " "
+
+    elif character in punctuation:
+        encrypted_sentance += character
+
+    else:
+        old_index = alphabet.index(character)
+        new_index = (old_index + number) % 26
+        encrypted_sentance += alphabet[new_index]
+
+print(f"The new sentance after encrpting is:\n{encrypted_sentance}")
