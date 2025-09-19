@@ -144,28 +144,21 @@ print()
 
 import string
 
-# * Star the function.
-def encypted(sentance, number):
-    encrypted_sentance = ""
-    alphabet = string.ascii_letters
 
-    for character in sentance:
-        if character in alphabet:
-            old_index = alphabet.index(character)
-            new_index = (old_index + number) % 52
-            encrypted_sentance += alphabet[new_index]
+encrypted_sentance = ""
+alphabet = string.ascii_letters
+sentance = input("Enter your sentance:\n").strip()
+number = int(input("Enter a shift number:\t"))
+
+for character in sentance:
+    if character in alphabet:
+        old_index = alphabet.index(character)
+        new_index = (old_index + number) % 52
+        encrypted_sentance += alphabet[new_index]
         
-        else:
-            encrypted_sentance += character
+    else:
+        encrypted_sentance += character
 
     print(f"The new sentance after encrpting is:\n{encrypted_sentance}")
     print("-" * 20)
     print()
-# * End the function.
-
-
-sentance = input("Enter your sentance:\n").strip()
-number = int(input("Enter a shift number:\t"))
-
-encypted(sentance, number)
-
