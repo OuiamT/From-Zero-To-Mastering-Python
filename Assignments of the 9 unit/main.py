@@ -107,7 +107,7 @@ print()
 # 'the king is sleeping!!?
 
 # Needed Output:
-# ''
+# 'wkh nlqj lv vohhslqj!!?'
 
 import string
 
@@ -116,7 +116,6 @@ encrypted_sentance = ""
 alphabet = string.ascii_lowercase
 punctuation = string.punctuation
 sentance = input("Enter your sentance:\n").strip().lower()
-number = int(input("Enter the number for encrpting:\t"))
 
 for character in sentance:
     if character == " ":
@@ -127,7 +126,46 @@ for character in sentance:
 
     else:
         old_index = alphabet.index(character)
-        new_index = (old_index + number) % 26
+        new_index = (old_index + 3) % 26
         encrypted_sentance += alphabet[new_index]
 
 print(f"The new sentance after encrpting is:\n{encrypted_sentance}")
+print("-" * 20)
+print()
+
+
+# 6
+# Input
+# 'Tell "JACK" that the "CAT" is out the "GARDEN"!'
+# Enter the shift number:
+
+# Needed Output:
+# 'Whoo "MDFN" wkdw wkh "FDW" lv rxw wkh "JDUGHQ"!' --> with number 3
+
+import string
+
+# * Star the function.
+def encypted(sentance, number):
+    encrypted_sentance = ""
+    alphabet = string.ascii_letters
+
+    for character in sentance:
+        if character in alphabet:
+            old_index = alphabet.index(character)
+            new_index = (old_index + number) % 52
+            encrypted_sentance += alphabet[new_index]
+        
+        else:
+            encrypted_sentance += character
+
+    print(f"The new sentance after encrpting is:\n{encrypted_sentance}")
+    print("-" * 20)
+    print()
+# * End the function.
+
+
+sentance = input("Enter your sentance:\n").strip()
+number = int(input("Enter a shift number:\t"))
+
+encypted(sentance, number)
+
