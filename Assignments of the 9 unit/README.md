@@ -1,6 +1,6 @@
-# More about Functions in Python:
+# 🧠 More about Functions in Python:
 
-## What i learned:
+## ✔ What i learned:
 
 ### 🔹 Function with Parameters and Arguments:
 A **function** is a block of code that runs only when called, you can pass information to a function using **parameters** and **arguments**.
@@ -26,6 +26,24 @@ def introduce(first_name, last_name, age):
 
 # Positional arguments: not matched in order
 introduce(last_name="Adil", age= "30", first_name= "Mahmoud")     # Output: My name is Mahmoud Adil
-                                                                  #         My age is 30 years old
+                                                                            My age is 30 years old
 ```
 
+## 📌 Bonus Knowledge:
+### 🔹 The Difference Between `find()` and `index()`:
+Both methods return the position of a substring in a string, but:
+
+| Method     |  If found | If not found          |
+| ---------- | ---------------------- | --------------------- |
+| `.index()` | Index of first match   | ❌ Raises `ValueError` |
+| `.find()`  | Index of first match   | ✅ Returns `-1`        |
+
+```
+text = "banana"
+
+print(text.index("n"))   # 2
+print(text.find("n"))    # 2
+
+print(text.find("r"))    # -1
+print(text.index("r"))   # ❌ ValueError
+```
