@@ -123,33 +123,3 @@ for character in sentance:
 print(f"The new sentance after encrpting is:\n{encrypted_sentance}")
 print("-" * 20)
 print()
-
-
-# 6
-# Input
-# 'Tell "JACK" that the "CAT" is out the "GARDEN"!'
-# Enter the shift number:
-
-# Needed Output:
-# 'Whoo "MDFN" wkdw wkh "FDW" lv rxw wkh "JDUGHQ"!' --> with number 3
-
-import string
-
-
-encrypted_sentance = ""
-alphabet = string.ascii_letters
-sentance = input("Enter your sentance:\n").strip()
-number = int(input("Enter a shift number:\t"))
-
-for character in sentance:
-    if character in alphabet:
-        old_index = alphabet.index(character)
-        new_index = (old_index + number) % 52
-        encrypted_sentance += alphabet[new_index]
-        
-    else:
-        encrypted_sentance += character
-
-    print(f"The new sentance after encrpting is:\n{encrypted_sentance}")
-    print("-" * 20)
-    print()
