@@ -1,4 +1,21 @@
-"""***** ENCRYPTION *****"""
+"""
+This program demonstrates a simple -Caesar Cipher- encryption and decryption.
+
+Encryption:
+-----------
+- Takes a message and a shift number.
+- Shifts each alphabetic character forward by the given number.
+- Keeps non-alphabetic characters (spaces, punctuation, quotes) unchanged.
+
+Decryption:
+-----------
+- Takes the encrypted message with the same shift number.
+- Shifts each alphabetic character backward by the given number.
+- Restores the original message.
+"""
+
+
+# ***** ENCRYPTION *****
 
 # Input
 # 'Tell "JACK" that the "CAT" is out the "GARDEN"!'
@@ -34,7 +51,7 @@ print("-" * 20)
 print()
 
 
-"""***** DECRYPTION *****"""
+# ***** DECRYPTION *****
 
 # Input
 # 'Whoo "MDFN" wkdw wkh "FDW" lv rxw wkh "JDUGHQ"!'
