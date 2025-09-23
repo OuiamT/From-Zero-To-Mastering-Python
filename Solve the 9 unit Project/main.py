@@ -9,7 +9,7 @@ Encryption:
 
 Decryption:
 -----------
-- Takes the encrypted message with the same shift number.
+- Takes the encrypted message.
 - Shifts each alphabetic character backward by the given number.
 - Restores the original message.
 """
