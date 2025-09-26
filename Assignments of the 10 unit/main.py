@@ -192,3 +192,54 @@ while True:
     
     else:
         print(f"This {choice} number not exist in the contact managment menu ...")
+print("-" * 20)
+print()
+
+
+# 8
+#! Dealing with the operating system
+#! os.system("clear") --> Apple and Linux
+#! os.system("cls") --> Windows
+
+import os
+print(os.name)
+print("""
+Hello
+      Hello
+      Hello""")
+
+input("Press any key to clear the screen ....")
+if os.name == "nt":
+# nt --> New Technologie
+    os.system("cls")
+else:
+    os.system("clear")
+
+input("Press any key to exit ....")
+print("-" * 20)
+print()
+
+# 9
+
+import random
+import os
+
+def clear_screen():
+    if os.name == "nt":
+        os.system("cls")
+    else:
+        os.system("clear")
+
+my_guess = int(input("Guess the number between 1 and 10:  "))
+computer_guess = random.randint(1, 10)
+
+while my_guess != computer_guess:
+    print("Wrong guess. Try again ...")
+    input("Press and key to continue ...")
+    clear_screen()
+    my_guess = int(input("Guess the number between 1 and 10:  "))
+    
+    
+print("Congratulation!! You gussed the correct number.")
+print("-" * 20)
+print()
