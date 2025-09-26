@@ -106,16 +106,44 @@ print("-" * 20)
 print()
 
 
+# Nested Dict
+my_books = {
+    "English": ["The giver", "Inferno", "Focus"],
+    "Arabic": {
+        "History": "Tabari",
+        "Novel": "somer",
+    }
+}
+
 # 6
+# Needed Output:
+# {
+# '01': {'name': 'Focus'}, 
+# '02': {'name': 'The giver'}, 
+# '03': {'name': 'Vectory'}
+# }
+
+my_books = {}
+book_count = 0
+while book_count < 3:
+    book_id = input("Enter a book ID:  ")
+    book_name = input("Enter a book name:  ").capitalize()
+
+    my_books[book_id] = {"name": book_name}
+    
+    book_count += 1
+print(my_books)
+print("-" * 20)
+print()
+
+# 7
 
 def add_a_contact(contacts):
     ID_contact = input("Enter the contact ID:  ")
     user_name = input("Please type a name:  ").capitalize()
     user_phone = input("Please type a phone number:  ")
-    contacts["ID"] = ID_contact
-    contacts["name"] = user_name
     if user_phone.isdigit():
-        contacts["phone number"] = user_phone
+        contacts[ID_contact] = {"name": user_name, "number phone": user_phone}
         print(f"\n{user_name} was added successfuly ....\n")
     else:
         print("Try again and enter a number phone!")
@@ -123,13 +151,13 @@ def add_a_contact(contacts):
 def recherche_a_contact(contacts):
     ID_contact = input("Please enter an ID edit:  ")
 
-    if ID_contact == contacts["ID"]:
+    if ID_contact in contacts:
         new_name = input("Enter a new name:  ").capitalize()
         new_phone = input("Enter a new number:  ")
-        contacts["name"] = new_name
         if new_phone.isdigit():
-            contacts["phone number"] = new_phone
+            contacts[ID_contact] = {"name": new_name, "number phone": new_phone}
             print("\n Success ...")
+
         else:
             print("Try again and enter a number phone!")
 
