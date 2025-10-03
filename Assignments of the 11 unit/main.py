@@ -41,23 +41,40 @@ import os
 def clear_scrin():
     os.system( "cls" if os.name == "nt" else "clear")
 
-def result(budget, item, price):
+def the_rest(budget, item, price):
     return budget - (item * price)
     
 while True:
     clear_scrin()
-    budget = int(input("Enter your spending budget:  "))
+    budget = float(input("Enter your spending budget:  "))
     item = input("Enter the item you want to buy:  ").lower()
     many_items = int(input(f"How many {item}s do you want to buy?  "))
-    price = int(input(f"Enter the price per {item}:  "))
+    price = float(input(f"Enter the price per {item}:  "))
 
-    sum = result(budget, many_items, price)
-    if sum < 0:
+    if the_rest(budget, many_items, price) < 0:
         print("Waring: Your purchase exceeds you daily dubget!")
     else:
         print("Purchase successful!! Enjoy your new item.")
+    # print("Waring: Your purchase exceeds you daily dubget!") if result(budget, many_items, price) < 0 else print("Purchase successful!! Enjoy your new item.")
 
     if input("Do you want to continue? y-n:  ").lower() != "y":
         break
 print("-" * 20)
 print()
+
+
+# 4
+#! Shorten these codes
+# def greet_person(name):
+#     greeting_message = f"Hello, {name}! How are you?"
+#     return greeting_message
+
+# user_name = input("Enter your name:  ")
+# result = greet_person(user_name)
+# print(result)
+
+def greet_person(name):
+    return f"Hello, {name}! How are you?" 
+
+print(greet_person(input("Enter your name:  ")))
+
