@@ -122,10 +122,10 @@ print()
 
 # 7
 # Needed Output:
-# Enter a user name
-# Enter your email
+# Enter a user name.
+# Enter your email.
 # Checking email name ....
-# Check if email is valid or not
+# Check if email is valid or not.
 
 
 def check_result(name, email):
@@ -146,3 +146,26 @@ time.sleep(3)
 check_result(user_name, email)
 print("-" * 20)
 print()
+
+
+# 8
+# Needed Output:
+# ! Loop without a for or while loop.
+# def greet():
+#     print("Hello there")
+#     if input("Do you want to do it again? y/n:  ").lower() == "y":
+#         # code here
+#         pass
+#     else:
+#         print("Exiting ....")
+
+# greet()
+
+def greet():
+    print("Hello there")
+    if input("Do you want to do it again? y/n:  ").lower() == "y":
+        greet()  
+    else:
+        print("Exiting ....")
+
+greet()
