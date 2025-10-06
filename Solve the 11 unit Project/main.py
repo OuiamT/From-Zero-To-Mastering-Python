@@ -1,3 +1,24 @@
+"""
+Currency Converter Project
+--------------------------
+
+A simple terminal-based currency converter that allows users to convert
+between predefined currencies (USD, EUR, MRC, RMB). The program displays
+an ASCII-art introduction, requests user input for source and target
+currencies, performs conversion using exchange rates stored in a
+dictionary, and simulates processing delays for a better user experience.
+
+Modules used:
+    - time: to simulate delay and create a dynamic user experience.
+    - os: to clear the terminal screen for better readability.
+
+Main features:
+    • Display available currencies with their conversion rates.
+    • Convert an entered amount between selected currencies.
+    • Display exchange rate and calculated converted amount.
+    • Allow users to repeat or cancel conversions.
+"""
+
 import time
 import os
 
@@ -14,10 +35,34 @@ def clear_scrine():
 
 
 def calculate_rate(to_currency, from_currenccy):
+    """
+    Calculate the exchange rate between two currencies.
+
+    Args:
+        to_currency (str): The target currency code (e.g., 'EUR').
+        from_currenccy (str): The source currency code (e.g., 'USD').
+
+    Returns:
+        float: The exchange rate value representing how many units of
+        `to_currency` equal one unit of `from_currenccy`.
+    """
     return currency[to_currency] / currency[from_currenccy]
 
 
 def calculate_converted(to_currency, from_currenccy):
+    """
+    Convert an entered amount from one currency to another.
+
+    This function uses the global variable `amount_i_have` and multiplies
+    it by the exchange rate calculated using `calculate_rate()`.
+
+    Args:
+        to_currency (str): The target currency code.
+        from_currenccy (str): The source currency code.
+
+    Returns:
+        float: The converted currency amount.
+    """
     return amount_i_have * calculate_rate(to_currency, from_currenccy)
 
 
