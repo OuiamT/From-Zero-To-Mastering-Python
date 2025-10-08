@@ -144,8 +144,6 @@ while True:
             != "y"
         ):
             break
-        else:
-            continue
 
     else:
         print("Sorry invalid currency. Convesion canceled..")
