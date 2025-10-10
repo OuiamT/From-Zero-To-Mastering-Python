@@ -1,4 +1,4 @@
-field = [["🍀", "🍀", "🍀"], ["🍀", "🍀", "🍀"], ["🍀", "🍀", "🍀"]]
+from art import field
 
 print("Welcome to place the rabbit...\n")
 print(f"{field[0]}   \n{field[1]}   \n{field[2]}")

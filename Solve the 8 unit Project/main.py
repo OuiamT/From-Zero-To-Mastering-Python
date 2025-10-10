@@ -15,82 +15,9 @@ Attributes:
 """
 
 import random
+from hangman_art import HANGMANPICS
+from hangman_words import fruits
 
-
-# todo --> رسومات الرجل المخنوق
-HANGMANPICS = [
-    """
-  +---+ 
-      |
-      |
-      |
-      |
-      |
-=========
-""",
-    """
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========""",
-    """
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========""",
-    """
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========""",
-    """
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========""",
-    """
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========""",
-    """
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========""",
-]
-
-
-fruits = [
-    "appel",
-    "avocado",
-    "banana",
-    "orange",
-    "tangerine",
-    "plum",
-    "pear",
-    "watermelon",
-    "pineappel",
-    "strawberry",
-]
 
 computer_choice = random.choice(fruits)
 # todo --> تخمين فاكهة عشوائية

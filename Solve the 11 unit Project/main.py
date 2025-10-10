@@ -19,6 +19,7 @@ Main features:
     • Allow users to repeat or cancel conversions.
 """
 
+from currency_art import currency_ascii_art
 import time
 import os
 
@@ -69,26 +70,7 @@ def calculate_converted(to_currency, from_currenccy):
 def intro():
     clear_scrine()
     print("Welcome to *** 'Currency Converter' ***\n")
-    print(
-        """
-    ||====================================================================||
-    ||//$\\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//$\\||
-    ||(100)==================|  Python RESERVE NOTE |================(100)||
-    ||\\$//        ~         '------========--------'                \\$//||
-    ||<< /        /$\              // ____ \\                         \ >>||
-    ||>>|  12    //L\\            // ///..) \\         L38036133B   12 |<<||
-    ||<<|        \\ //           || <||  >\  ||                        |>>||
-    ||>>|         \$/            ||  $$ --/  ||        One Hundred     |<<||
-    ||<<|      L38036133B        *\\  |\_/  //* series                 |>>||
-    ||>>|  12                     *\\/___\_//*   1989                  |<<||
-    ||<<\      Treasurer     ______/Franklin\________     Secretary 12 />>||
-    ||//$\                 ~|UNITED STATES OF AMERICA|~               /$\\||
-    ||(100)===================  ONE HUNDRED DOLLARS =================(100)||
-    ||\\$//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\$//||
-    ||====================================================================||
-    -------------------------------------------------------------------------------
-    """
-    )
+    print(currency_ascii_art)
     for key in currency:
         print(f"{key} : {currency[key]}")
 

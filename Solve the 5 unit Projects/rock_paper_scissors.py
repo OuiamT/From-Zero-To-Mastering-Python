@@ -1,31 +1,5 @@
 import random
-
-# ? Save Ascii in Variables 
-rock = """
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-"""
-paper = """
-     _______
----'    ____)____
-           ______)
-          _______)
-         _______)
----.__________)
-"""
-scissors = """
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-"""
-
+from art import rock, paper, scissors
 
 print("Welcome to the Rock, Paper, Scissors game :")
 plan = input("Press 'Enter' to continue or type 'Help' for the rules :\t").lower()
