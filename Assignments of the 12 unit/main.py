@@ -25,6 +25,3 @@ def information():
 information()
 print("-" * 20)
 print()
-
-# 3
-# Needed Output:
