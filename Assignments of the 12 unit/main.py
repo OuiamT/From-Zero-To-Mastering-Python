@@ -25,3 +25,17 @@ def information():
 information()
 print("-" * 20)
 print()
+
+
+# 3
+
+while True:
+    try:
+        age = int(input("Enter your age please: "))
+    except ValueError:
+        print("Sorry but your print is not an integer")
+    except:
+        print("Find an Error")
+    else:
+        print(f"You born in: {2025 - age}")
+        break
