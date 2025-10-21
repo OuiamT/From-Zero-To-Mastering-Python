@@ -41,7 +41,7 @@ def clear_scrine():
 
 
 def another_cards_for_me(cards, my_cards, computer_cards):
-    while input("Get another card? y/n:\t").lower() == "y":
+    while input("Get another card? 'y' if you want to continue or press any key to squip:\t").lower() == "y":
         if sum(my_cards) < MAX_OF_TAKE_CARDS:
             my_cards.append(cards[len(my_cards) + len(computer_cards)])
             card_A(my_cards)
