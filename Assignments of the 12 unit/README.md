@@ -1,9 +1,9 @@
-### 📘 Python Notes: Scope & Exception Handling:
+# 📘 Python Notes: Scope & Exception Handling:
 ## 🔹 Scope: Global and Local Variables:
-# Global Variables
+### Global Variables
 - Defined outside of all functions.
 - Accessible anywhere in the file.
-# Local Variables:
+### Local Variables:
 - Defined inside a function.
 - Only accessible within that function.
 ```
@@ -27,7 +27,7 @@ print(x)  # 10
 ```
 
 ## 🔹 Exception Handling: try, except, else, finally:
-# Structure:
+### Structure:
 ```
 try:
     # Code that might raise an error
