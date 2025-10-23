@@ -35,16 +35,4 @@ This repository contains my personal solutions, notes, and experiments as I lear
 ### 6. Error Handling:
 - Raise exceptions
 - Using try, except, else, and finally blocks
-## 🧩 Folder Structure
-```bash
-From-Zero-To-Mastering-Python/
-│
-├── 01_basics/
-├── 02_control_flow/
-├── 03_data_structures/
-├── 04_functions/
-├── 05_modules/
-├── 06_file_handling/
-├── 07_exceptions/
-├── 08_oop/
-└── projects/
+
