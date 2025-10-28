@@ -79,8 +79,8 @@ Release Year: {self.year}
 Genre: {self.genre}
 """)
         
-    def change_director(self, new_name):
-        self.director = new_name
+    def change_director(self, new_director):
+        self.director = new_director
 
 movie1 = Movie("Inception", "Christopher Nolan", "2010", "Sci-Fi")
 movie2 = Movie("The Godfather", "Francis Ford Copola", "1972", "Crime")
