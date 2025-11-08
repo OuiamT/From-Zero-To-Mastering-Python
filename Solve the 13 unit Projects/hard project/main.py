@@ -1,1 +1,153 @@
-Commande ECHO activ‚e.
+from membership import Member
+import os
+import time
+
+
+all_members = []
+        
+# ! The biginnir of search function
+def search_by(all_members):
+    found_members = []
+    while True:
+        clear_scrine()
+        print("""
+    Search by:
+            
+    1. First Name
+    2. ID membership
+    3. Status
+    4. Exit
+            
+    """)
+        try:
+            choice = int(input("Enter your choice:  "))
+            time.sleep(3)
+            match choice:
+                case 1:
+                    f_name = input("Enter the first name:  ").capitalize().strip()
+                    if not f_name.isalpha():
+                        f_name = is_alpha(f_name)
+                    for member in all_members:
+                        if f_name == member.f_name:
+                            found_members.append(member)
+
+                case 2:
+                    member_id = input("Enter the ID membership:  ").capitalize().strip()
+                    if not member_id.isdigit():
+                        member_id = is_digit(member_id)
+                    for member in all_members:
+                        if member_id == member.member_id:
+                            found_members.append(member)
+
+                case 3:
+                    member_status = input("Enter the status of the person:  ").capitalize().strip()
+                    for member in all_members:
+                        if member_status == member.member_status:
+                            found_members.append(member)
+
+                case 4:
+                    print("You will come back to principal page ...")
+                    time.sleep(3)
+                    break
+
+                case _:
+                    print("\nInput a number between 1 and 3!!")
+                    time.sleep(3)
+
+            clear_scrine()
+            for x in found_members:
+                Member.display_members(x)
+            found_members.clear()
+            time.sleep(5)
+
+        except:
+            print("Ivalid choice... Choice 1 or 2 or 3")
+            time.sleep(5)
+
+# ! The end of search function
+        
+
+def clear_scrine():
+    os.system("cls" if os.name == "nt" else "clear")
+
+def is_digit(member_id):
+    while not member_id.isdigit():
+        member_id = input("Enter the ID membership from digits (0 to 9):  ").strip()
+        return member_id
+    
+def is_alpha(name):
+        while not name.isalpha():
+            name = input("Enter the name only from alphabitic:\t").capitalize().strip()
+            return name
+
+def creat_member():
+    f_name = input("Enter first name:\t").capitalize().strip()
+    if not f_name.isalpha():
+        f_name = is_alpha(f_name)
+
+    l_name = input("Enter last name:\t").capitalize().strip()
+    if not l_name.isalpha():
+        l_name = is_alpha(l_name)
+
+    member_id = input("Enter membership ID:\t").strip()
+    if not member_id.isdigit():
+        member_id = is_digit(member_id)
+
+    member_status = input("Enter membership status, Or click enter:\t").capitalize().strip()
+    return Member(f_name, l_name, member_id, member_status)
+
+
+while True:
+    clear_scrine()
+    print("""
+Welcome to Gym Membership Managment
+          
+
+Choose an Action:
+          
+1. Add new member
+2. Display all members
+3. Search for a member
+4. Exit
+""")
+    try:
+        choice = int(input("\nEnter your choice:\t"))
+        time.sleep(3)
+        clear_scrine()
+        match choice:
+            case 1:
+                all_members.append(creat_member())
+                time.sleep(3)
+                print("\nMember added successfully!")
+                time.sleep(3)
+
+            case 2:
+                if all_members:
+                    print("Displaying all members ....")
+                    for member in all_members:
+                        Member.status_etap(member)
+                        Member.display_members(member)
+                else:
+                    print("Sorry this file is Empty...")
+                time.sleep(5)
+
+            case 3:
+                if all_members:
+                    search_by(all_members)
+                else:
+                    print("Sorry the file is Empty... So you desn't can search")
+                time.sleep(3)
+            case 4:
+                print("The Programme Exit ....")
+                time.sleep(3)
+                print("Good Bye !!!")
+                break
+            case _:
+                print("Invalid choice... Choice a number between 1 and 4")
+                time.sleep(5)
+    except:
+        time.sleep(3)
+        print("Please Input a number between 1 and 4")
+        time.sleep(3)
+        print("Try again ....")
+        time.sleep(3)
