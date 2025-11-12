@@ -7,4 +7,4 @@ Practice basic syntax and structure of OOP.
 This project is an **intermediate-level** console application that helps users manage daily tasks.
 
 # 🔴 HARD PROJECT – Advanced Application:
-This project is an advanced, menu-driven management system designed for handling gym memberships.
+This project is an **advanced**, menu-driven management system designed for handling gym memberships.
