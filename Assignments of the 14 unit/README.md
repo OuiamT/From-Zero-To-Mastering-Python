@@ -4,3 +4,4 @@
 - var.circle(radius)
 - var.speed(fastest, fast, slow, slowest, normal)
 - var.penup() var.pendown() var.pensize(nbr)
+- difference between screen.reset() and clear()
