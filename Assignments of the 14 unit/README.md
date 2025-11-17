@@ -1,1 +1,6 @@
-
+- we have two class (Turtle, Screen) in a turtle module
+- we have a var.exitonclick() in screen class.
+- In a Turtle class we have: var.shape(turtle, classic, square , triangle, circle and arrow) var.color(red, blue...) go to a browser search by turtlr python color to fine a lot of colors in turtle class, var.forward(steps by picksels?), var.right(angel), var.left(angel).
+- var.circle(radius)
+- var.speed(fastest, fast, slow, slowest, normal)
+- var.penup() var.pendown() var.pensize(nbr)
