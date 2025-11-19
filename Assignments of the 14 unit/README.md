@@ -7,3 +7,5 @@
 - difference between screen.reset() and clear()
 - screen.setup(width, hight), screen.bgcolor(name of color)
 - turtle.goto(x,y)
+- window.textinput(title ="", prompt="")
+- turtle.write(txt, font=(style, sizze, normal)
