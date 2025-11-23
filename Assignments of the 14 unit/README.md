@@ -1,11 +1,22 @@
-- we have two class (Turtle, Screen) in a turtle module
-- we have a var.exitonclick() in screen class.
-- In a Turtle class we have: var.shape(turtle, classic, square , triangle, circle and arrow) var.color(red, blue...) go to a browser search by turtlr python color to fine a lot of colors in turtle class, var.forward(steps by picksels?), var.right(angle), var.left(angle).
-- var.circle(radius)
-- var.speed(fastest, fast, slow, slowest, normal)
-- var.penup() var.pendown() var.pensize(nbr)
-- difference between screen.reset() and clear()
-- screen.setup(width, hight), screen.bgcolor(name of color)
-- turtle.goto(x,y)
-- window.textinput(title ="", prompt="")
-- turtle.write(txt, font=(style, sizze, normal)
+# 🐢 Python Turtle Module:
+**The Turtle** module in Python is a beginner-friendly graphics library in **OOP** that allows you to create drawings, animations, and interactive programs using simple commands.
+### 🔹 Main Classes:
+It works with two main classes:
+**1. `Turtle` Class**:
+Used to create and control a “turtle” — the pen that moves and draws on the screen.
+
+**2. `Screen` Class**:
+Represents the drawing window.
+You use it to control window settings such as size, background color, input dialogs, etc.
+## 🖥️ Screen Class:
+• `Screen().exitonclick()`:
+Closes the window when you click on it. Useful for ending programs.
+• `screen.setup(width, height)`:
+Sets the window size.
+• `screen.bgcolor(color_name)`:
+Changes the background color.
+• `screen.reset()` vs `screen.clear()`:
+**reset()** → Clears the screen and resets the turtle (position, color, speed, etc).
+**clear()** → Clears the drawings only but keeps settings the same.
+• `window.textinput(title, prompt)`:
+Opens a dialog box to take text input from the user.
