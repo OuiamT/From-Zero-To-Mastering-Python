@@ -85,7 +85,6 @@ window.reset()
 window.bgcolor("black")
 window.setup(width=800, height=600)
 
-turtle1 = Turtle("turtle")
 turtle1.color("white")
 turtle1.speed("fastest")
 
@@ -122,5 +121,35 @@ draw_a_circle()
 draw_a_square()
 draw_a_triangle()
 
+time.sleep(2)
+window.reset()
+
+# 5
+
+window.bgcolor("white")
+while True:
+    my_choice = window.textinput("Wait a moment. Please", "What do you want?square, circle or triangle").lower().strip()
+    match my_choice:
+        case "circle" | "دائرة":
+            turtle1.circle(100)
+
+        case "square" | "مربع":
+            for _ in range(4):
+                turtle1.forward(100)
+                turtle1.left(90)
+        case "triangle" | "مثلث":
+            for _ in range(3):
+                turtle1.forward(150)
+                turtle1.left(120)
+        
+        case "exit" | "خروج":
+            window.clear()
+            window.bgcolor("CadetBlue1")
+            turtle1.hideturtle()
+            turtle1.write("Press any key to exit", font=("Arial", 20, "normal"), align="center")
+            turtle1.write("اضغط في اي مكان للخروج\n\n\n",font=30, align="center")
+            break
+        case _:
+            continue
 
 window.exitonclick()
