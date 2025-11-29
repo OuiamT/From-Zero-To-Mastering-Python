@@ -1,0 +1,6 @@
+- snake project:
+- all of turtle square shape has a 20 picksel in width. How is piksels?
+- python do 'trace'?
+- window.tracer(0)
+- window.update()
+- 
