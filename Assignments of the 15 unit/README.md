@@ -3,4 +3,3 @@
 - python do 'trace'?
 - window.tracer(0)
 - window.update()
-- 
