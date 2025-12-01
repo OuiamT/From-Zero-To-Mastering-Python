@@ -65,7 +65,7 @@ runner = Athlete()
 runner.walk()
 print("-"*20)
 print()
-#todo--->  In example 1: we inherit the walk() function
+#todo---> In example 1: we inherit the walk() function
 #todo---> In example 2: we don't inherit the walk() function in the parent class,
 #todo     because we have the walk() function in the child class. 
 #todo---> In the last example 3: despite the presence of the walk() function in the child class, 
