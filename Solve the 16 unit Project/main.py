@@ -1,6 +1,7 @@
 from turtle import Screen
 from snakeeat import Snake
 from food import Food
+from scoreboard import ScoreBoard
 import time
 
 window = Screen()
@@ -10,6 +11,7 @@ window.title("Snake Project")
 window.tracer(0)
 snake1 = Snake()
 food = Food()
+score = ScoreBoard()
 
 
 while True:
@@ -22,9 +24,12 @@ while True:
     window.onkey(snake1.left, "Right")
     window.onkey(snake1.right, "Left")
     if snake1.head.distance(food) < 10:
-        print("Good Job!!")
         food.where_food()
         snake1.tall_of_snake()
+        score.increase_score()
+    if snake1.head.xcor() > 270 or snake1.head.xcor() < -270 or snake1.head.ycor() > 270 or snake1.head.ycor() < -270:
+        score.lose()
+        break
 
 
 window.exitonclick()
