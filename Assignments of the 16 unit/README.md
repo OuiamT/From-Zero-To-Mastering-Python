@@ -1,4 +1,5 @@
 - Inheritance
 - super()
 - Overriding
-- 
+- self.head.setheading(nbr)
+- self.shapesize(nbr, nbr)
