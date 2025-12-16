@@ -27,11 +27,16 @@ while True:
         food.where_food()
         snake1.tall_of_snake()
         score.increase_score()
-    if snake1.head.xcor() > 270 or snake1.head.xcor() < -270 or snake1.head.ycor() > 270 or snake1.head.ycor() < -270:
+    if (
+        snake1.head.xcor() > 270
+        or snake1.head.xcor() < -270
+        or snake1.head.ycor() > 270
+        or snake1.head.ycor() < -270
+    ):
         score.lose()
         break
 
-    for segmant in snake1.snake[: -1]:
+    for segmant in snake1.snake[:-1]:
         if snake1.head.distance(segmant) < 10:
             score.lose()
             break

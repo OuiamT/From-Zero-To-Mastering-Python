@@ -1,5 +1,6 @@
 from turtle import Turtle
 
+
 class ScoreBoard(Turtle):
     def __init__(self):
         super().__init__()
@@ -21,4 +22,8 @@ class ScoreBoard(Turtle):
     def lose(self):
         self.screen.bgcolor("darkred")
         self.goto(0, 0)
-        self.write(f"Game Over\nFinal Score is: {self.score}", align="center", font=("Arial", 24, "normal"))
+        self.write(
+            f"Game Over\nFinal Score is: {self.score}",
+            align="center",
+            font=("Arial", 24, "normal"),
+        )
