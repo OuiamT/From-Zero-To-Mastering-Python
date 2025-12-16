@@ -31,5 +31,10 @@ while True:
         score.lose()
         break
 
+    for segmant in snake1.snake[: -1]:
+        if snake1.head.distance(segmant) < 10:
+            score.lose()
+            break
+
 
 window.exitonclick()
