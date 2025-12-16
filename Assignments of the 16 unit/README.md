@@ -4,3 +4,10 @@
 - self.head.setheading(nbr)
 - self.shapesize(nbr, nbr)
 - MRO: Methode Resolution Order.
+- Some CMI(Comand Line Interfae):
+  -directory dir:window/ ls mac
+  - change dir :cd or cd ..
+  - cls / clear
+  - python3 main.py for run the project only in Mac
+- the package pyinstaller:
+  - pyinstaller --onefile --windowed main.py
