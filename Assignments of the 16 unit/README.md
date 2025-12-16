@@ -3,3 +3,4 @@
 - Overriding
 - self.head.setheading(nbr)
 - self.shapesize(nbr, nbr)
+- MRO: Methode Resolution Order.
