@@ -1,5 +1,3 @@
-- the package pyinstaller:
-  - pyinstaller --onefile --windowed main.py
 # 📘 Simple Guide in OOP:
 This document completes what we started with concepts in **object-oriented programming (OOP)** in Python using simple language and small examples.
 ## 🧬 Inheritance:
@@ -47,5 +45,6 @@ class Dog(Animal):
 | Change directory     | `cd folder_name`   | `cd folder_name`      | 
 | Go back one level    | `cd ..`            | `cd ..`               | 
 | Clear screen         | `cls`              | `clear`               | 
+
 | Check Python version | `python --version` | `python3 --version`   | 
 | Run project | `python main.py` | `python3 main.py`|
