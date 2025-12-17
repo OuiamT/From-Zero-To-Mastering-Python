@@ -45,6 +45,5 @@ class Dog(Animal):
 | Change directory     | `cd folder_name`   | `cd folder_name`      | 
 | Go back one level    | `cd ..`            | `cd ..`               | 
 | Clear screen         | `cls`              | `clear`               | 
-
 | Check Python version | `python --version` | `python3 --version`   | 
 | Run project | `python main.py` | `python3 main.py`|
