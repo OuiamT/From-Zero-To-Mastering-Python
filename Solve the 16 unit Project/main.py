@@ -1,3 +1,24 @@
+"""
+Snake Game – Extended Version
+
+This file extends the basic Snake game by adding:
+- Food that appears randomly on the screen
+- A scoreboard to track the player's score
+- Snake growth when food is eaten
+- Collision detection with walls and the snake's own body
+
+New Game Logic
+--------------
+- When the snake's head touches the food, the food is repositioned,
+  the snake grows longer, and the score increases.
+- If the snake hits the screen boundaries, the game ends.
+- If the snake collides with its own body, the game ends.
+- Arrow keys are used to control the snake's movement.
+
+This script coordinates the interaction between the Snake, Food,
+and ScoreBoard classes and controls the main game loop.
+"""
+
 from turtle import Screen
 from snakeeat import Snake
 from food import Food
