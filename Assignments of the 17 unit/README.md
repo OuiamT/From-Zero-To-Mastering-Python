@@ -48,5 +48,3 @@ This project is a Ping Pong Game built using Python’s built-in **turtle graphi
   - Left player score
   - Right player score
 - Updates the scoreboard whenever a point is scored
-
-Updates the scoreboard whenever a point is scored
