@@ -1,4 +1,21 @@
+"""
+Represents the player-controlled paddle in the Falling Shapes Game.
+
+The paddle moves horizontally at the bottom of the screen and is used
+to catch falling shapes. Movement is restricted to prevent the paddle
+from leaving the visible game area.
+
+Methods
+-------
+go_left()
+    Moves the paddle to the left while staying within bounds.
+
+go_right()
+    Moves the paddle to the right while staying within bounds.
+"""
+
 from turtle import Turtle
+
 
 class Paddle(Turtle):
     def __init__(self, position):

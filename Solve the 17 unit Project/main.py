@@ -1,3 +1,26 @@
+"""
+Falling Shapes Game
+-------------------
+
+This script runs the main loop for a falling shapes game built using theturtle graphics module.
+The player controls a paddle at the bottom of thescreen and must catch falling shapes to earn points.
+
+Game Mechanics
+--------------
+- The player moves left and right to catch the shapes.
+- Different shapes award different points when caught:
+    * Circle   → 1 point
+    * Square   → 2 points
+    * Turtle   → 5 points (white turtle ends the game)
+    * Triangle → resets the score
+- Shapes fall from the top of the screen at increasing speed.
+
+Controls
+--------
+- Left Arrow  → Move paddle left
+- Right Arrow → Move paddle right
+"""
+
 from turtle import Screen
 from ball import Ball
 from paddle import Paddle
@@ -29,7 +52,7 @@ while True:
         shape_type = shapes.shape()
         shape_color = shapes.color()[0]
 
-        if shape_type == "turtle" :
+        if shape_type == "turtle":
             if shape_color == "white":
                 score.game_over()
                 break

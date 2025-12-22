@@ -1,5 +1,23 @@
+"""
+Represents a falling shape in the Falling Shapes Game.
+
+This class controls the creation, movement, and random appearance of
+shapes that fall from the top of the screen toward the player.
+Each shape can have a different type, color, and size, affecting
+the game outcome when caught.
+
+Methods
+-------
+move()
+    Moves the shape downward each frame.
+
+reset_position()
+    Resets the shape to the top of the screen with random properties.
+"""
+
 from turtle import Turtle
 import random
+
 
 class Ball(Turtle):
     def __init__(self):
@@ -11,7 +29,7 @@ class Ball(Turtle):
         self.reset_position()
 
     def move(self):
-        self.goto(self.xcor(), self.ycor()+ self.y_move)
+        self.goto(self.xcor(), self.ycor() + self.y_move)
 
     def reset_position(self):
         random_x = random.randint(-350, 350)
@@ -27,5 +45,3 @@ class Ball(Turtle):
 
         random_size = random.uniform(0.5, 2)
         self.shapesize(random_size, random_size)
-
-        

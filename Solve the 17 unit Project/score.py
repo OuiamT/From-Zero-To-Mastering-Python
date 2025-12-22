@@ -1,4 +1,35 @@
+"""
+Manages the score display for the Falling Shapes Game.
+
+This class is responsible for showing the current score at the top
+of the screen, updating the score when the player catches shapes,
+resetting the score for special cases, and displaying a game-over
+message when the game ends.
+
+Responsibilities
+----------------
+- Display the current score.
+- Update the score based on shape type.
+- Reset the score when required.
+- Show a game-over message.
+
+Methods
+-------
+update_score_board()
+    Refreshes the score display on the screen.
+
+increase_score(point)
+    Adds the given number of points to the current score.
+
+reset_score()
+    Resets the score back to zero.
+
+game_over()
+    Displays the game-over message.
+"""
+
 from turtle import Turtle
+
 
 class ScoreBoard(Turtle):
     def __init__(self):
