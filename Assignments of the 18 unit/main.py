@@ -27,3 +27,10 @@ with open("data.txt", "a") as file:
 with open("data.txt", "r") as file:
     print(file.read())
 print("-" * 30)
+
+# File paths:
+# --> The relative path:
+import os
+print(os.getcwd())
+# --> The absolute path:
+print(os.path.abspath(__file__))
