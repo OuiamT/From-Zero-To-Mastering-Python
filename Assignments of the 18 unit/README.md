@@ -9,4 +9,7 @@
   - a: append
   - x: creat
   - w+: write and read. we use file.seek(nbr)
-- the difference between abs path and relative path.
+  - r+: read then write
+  - a+ : append and read
+- file.seek(0)
+- the difference between absolut path and relative path.
