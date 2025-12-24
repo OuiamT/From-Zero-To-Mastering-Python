@@ -1,1 +1,12 @@
-
+### handling Files:
+- open to open my file.
+- file.read(nbr)
+- file.close(). Why we should close any file after we opened?
+- with open(path) as filename ->> to open and close automotaly
+- open(path, mode=):
+  - r: read
+  - w: write
+  - a: append
+  - x: creat
+  - w+: write and read. we use file.seek(nbr)
+- the difference between abs path and relative path.
