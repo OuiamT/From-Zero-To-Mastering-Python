@@ -1,15 +1,17 @@
-### handling Files:
-- open to open my file.
-- file.read(nbr)
-- file.close(). Why we should close any file after we opened?
-- with open(path) as filename ->> to open and close automotaly
-- open(path, mode=):
-  - r: read
-  - w: write
-  - a: append
-  - x: creat
-  - w+: write and read. we use file.seek(nbr)
-  - r+: read then write
-  - a+ : append and read
-- file.seek(0)
-- the difference between absolut path and relative path.
+# 📂 File Handling in Python:
+This document explains the basics of **handling files in Python**, including opening files, reading and writing modes, file pointers, and file paths.
+## 📌 Opening Files:
+To work with files in Python, we use the built-in open() function.
+```
+file = open("example.txt")
+```
+After opening a file, you can read or write data depending on the mode used.
+## 📖 Reading Files:
+```
+file.read()
+file.read(nbr)
+file.readline()
+file.readlines()
+```
+- **file.read()** → reads the entire file
+- **file.read(nbr)** → reads a specific number of characters
