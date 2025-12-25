@@ -1,16 +1,16 @@
 # Open a file for reading and close it after finishing.
-my_file = open(r"C:\Users\Python\Project Python\From-Zero-To-Mastering-Python\Assignments of the 18 unit\data.txt")
+my_file = open("data.txt")
 print(my_file.read())
 my_file.close()
 print("-" * 30)
 
 # Open a file for reading and close it automatically after finishing
-with open(r"C:\Users\Python\Project Python\From-Zero-To-Mastering-Python\Assignments of the 18 unit\data.txt") as my_file:
+with open("data.txt") as my_file:
     print(my_file.read(5))
 print("-" * 30)
 
 # Open a file to write a sentence of your choice without reading.
-with open(r"C:\Users\Python\Project Python\From-Zero-To-Mastering-Python\Assignments of the 18 unit\data.txt", "w") as my_file:
+with open("data.txt", "w") as my_file:
     my_file.write("Hi there, How is going?")
 print("-" * 30)
 
