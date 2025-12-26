@@ -1,0 +1,21 @@
+date,location,sales,payment_method
+2024-01-02,Casablanca,2500,Credit Card
+2024-01-03,Rabat,1800,Cash
+2024-01-04,Marrakech,3200,Mobile Payment
+2024-01-05,Tangier,1500,Credit Card
+2024-01-06,Agadir,2100,Cash
+2024-01-07,Casablanca,4000,Bank Transfer
+2024-01-08,Rabat,2750,Mobile Payment
+2024-01-09,Marrakech,3600,Credit Card
+2024-01-10,Tangier,1900,Cash
+2024-01-11,Agadir,2300,Mobile Payment
+2024-01-12,Casablanca,5000,Bank Transfer
+2024-01-13,Rabat,1650,Cash
+2024-01-14,Marrakech,2900,Credit Card
+2024-01-15,Tangier,2200,Mobile Payment
+2024-01-16,Agadir,3100,Credit Card
+2024-01-17,Casablanca,4500,Bank Transfer
+2024-01-18,Rabat,2000,Mobile Payment
+2024-01-19,Marrakech,3400,Cash
+2024-01-20,Tangier,2600,Credit Card
+2024-01-21,Agadir,2800,Mobile Payment
