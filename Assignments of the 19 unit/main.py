@@ -22,13 +22,13 @@ sales = pd.read_csv("sales.csv")
 
 print(sales.payment_method.mode())
 print(sales.payment_method.value_counts())
-#todo-> We observe two payment_methodes repet (Credit Card: 6   and    Mobile Payment: 6 )
+# todo-> We note the repetition of two payment methods (credit card: 6   and mobile payment: 6 ).
 
 rabat_data = sales[sales["location"] == "Rabat"].reset_index(drop=True)
 rabat_sales = rabat_data.sales.sum()
 print(rabat_data)
 print(rabat_sales)
-#todo-> We select the 'Rabat' city and his sum equal 8200.
+# todo-> We choose the city of “Rabat” and its total is 8200.
 
 # We group by location
 grouped = sales.groupby(["location"]).sum(numeric_only=True)
