@@ -35,4 +35,16 @@ This repository contains my personal solutions, notes, and experiments as I lear
 ### 6. Error Handling:
 - Raise exceptions
 - Using try, except, else, and finally blocks
+### 7. Decorators & Advanced Topics:
+- Docstrings
+- Exception Handling
+- Debugging Technique
+- Regular Expressions
+### 8.  Files & Built-ins:
+- File I/O (Open, Read, Write, Append)
+### 9. Object-Oriented Programming:
+- Classes & Object
+- Inheritance
+- Polymorphism
+- Encapsulation
 
